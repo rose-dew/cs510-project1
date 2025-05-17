@@ -1,52 +1,59 @@
-# Prerequisites
-*.d
+# General development files
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.swp
+*.swo
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
+# Build results
+Debug/
+Release/
 *.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
+*.dll
 *.pdb
+*.xml
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# F# specific
+.fable/
+
+# Config files (contains secrets)
+config.json
+appsettings.*.json
+*.env
+*.secret
+
+# NuGet packages
+packages/
+
+# Test results
+TestResults/
+*.trx
+
+# IDE specific
+.idea/
+*.iml
+
+# Azure Functions
+func/
+
+# Logs
+*.log
+*.log.*
+
+# Misc
+.DS_Store
+Thumbs.db
+
+# Node.js (if using Fable)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Local development files
+local.settings.json
+
+# HTMX (if downloaded locally)
+htmx.min.js
